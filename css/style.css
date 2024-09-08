@@ -1,0 +1,142 @@
+/* ================== RESET BÁSICO ================== */
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================== TEMA ================== */
+/* Variáveis de tema claro */
+.light-theme {
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+    --section-bg: #F5F5F5;
+    --primary-color: #E07A5F;
+    --hover-color: #FFA07A;
+}
+
+/* Variáveis de tema escuro */
+.dark-theme {
+    --background-color: #1E1E1E;
+    --text-color: #FFFFFF;
+    --section-bg: #2D2D2D;
+    --primary-color: #E07A5F;
+    --hover-color: #FFA07A;
+}
+
+/* Estilo do botão de tema */
+.theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.theme-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Adiciona um efeito hover */
+}
+.theme-btn .icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-color);
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Anta", sans-serif;
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+
+/* Estilo para esconder/mostrar ícones */
+#sun-icon, #moon-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+
+icon {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  color: var(--text-color);
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  background-color: var(--background-color);
+}
+input:hover {
+  opacity: 0.5;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; 
+
+  background-color: var(--section-bg);
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.equals {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+input[type=button] {
+  border-radius: 20px;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+}
+
+input[type=text] {
+  background-color: #cccccc;
+  color: var(--text-color);
+  border-radius: 10px;
+  font-size: 22px;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 280px;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  font-size: 13px;
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+footer icon {
+  color: var(--primary-color);
+  font-size: 11px;
+  font-weight: bold;
+}

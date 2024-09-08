@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="icon" type="image/png" href="images/calculate.png">
+    <!--FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src='main.js' defer></script>
+    <script src='js/theme.js' defer></script>
+</head>
+<body class="light-theme">
+    <!-- HEADER -->
+    <header>
+        <button id="theme-toggle" class="theme-btn">
+            <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-sun">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-moon" style="display: none;">
+                <path d="M21 12.79A9 9 0 0112.21 3 7.5 7.5 0 0021 12.79z"></path>
+            </svg>
+        </button>
+    </header>
+    <!-- MAIN -->
+    <h1><icon>>_</icon> Calculator</h1>
+    <input type="text" value=""  id="calc" placeholder="Calculation..." disabled>
+    <input type="text" value="" id="fieldResult" disabled>
+    <section class="teclado">
+        <input type="button" value="1" class="number">
+        <input type="button" value="2" class="number">
+        <input type="button" value="3" class="number"> 
+        <input type="button" value="/" class="operators">
+        <input type="button" value="4" class="number">
+        <input type="button" value="5" class="number">
+        <input type="button" value="6" class="number">
+        <input type="button" value="X" class="operators">
+        <input type="button" value="7" class="number">
+        <input type="button" value="8" class="number">
+        <input type="button" value="9" class="number">
+        <input type="button" value="-" class="operators">
+        <input type="button" value="C" class="clear">
+        <input type="button" value="0" class="number">
+        <input type="button" value="." class="number">
+        <input type="button" value="+" class="operators">
+        <input type="button" value="=" class="equals">
+    </section>    
+    <!-- FOOTER -->
+    <footer>
+		<icon>>_</icon> Copyright ©2024 | Developed by Israel Pedó de Camargo
+	</footer>
+</body>
+</html>
